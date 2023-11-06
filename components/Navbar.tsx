@@ -11,7 +11,7 @@ const Navbar = () => {
         <Image src="/hilink-logo.svg" alt="logo" width={74} height={29} />
       </Link>
 
-      <ul>
+      <ul className="flex gap-4">
         {NAV_LINKS.map((link) => (
           <Link
             href={link.href}

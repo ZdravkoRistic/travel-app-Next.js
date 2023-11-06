@@ -3,10 +3,11 @@ import Button from "./Button";
 
 const Hero = () => {
   return (
-    <section className="max-container padding-container flex flex-col gap-20 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row">
+    // ima problem sa css-om u <section: lg:mb-[250px] >
+    <section className="max-container padding-container flex flex-col gap-20 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row lg:mb-[250px]"> 
       <div className="hero-map" />
 
-      <div className="relative z-20 flex flex-1 flex-col xl:w-1/2">
+      <div className="relative z-20 flex flex-col  flex-1 xl:w-1/2">
         <Image
           src="/camp.svg"
           alt="camp"
@@ -42,7 +43,7 @@ const Hero = () => {
             </span>
           </p>
         </div>
-        <div>
+        <div className="flex">
           <Button type="button" title="Download App" variant="btn_green" />
 
           <Button
